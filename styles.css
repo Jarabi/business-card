@@ -1,0 +1,115 @@
+body {
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background: #023047;
+}
+
+.card {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    margin: 150px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    --dot-bg: #FFB703;
+    --dot-color: #023047;
+    --dot-size: 1px;
+    --dot-space: 12px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+
+    color: #FEFAE0;
+    border: 2px solid #FB8500;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all .5s ease;
+}
+
+.card:hover {
+    transform: translate3D(0,-1px,0) scale(1.03);
+    transition: all .4s ease;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-heading .card-img {
+    border: solid 4px #023047;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.card-heading .card-img .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-heading .name {
+    font-size: 1.2rem;
+    color: #023047;
+    margin-bottom: 0;
+}
+
+.card-info {
+    padding: 0 30px;
+    color: #023047;
+    font-weight: bold;
+    font-size: .95rem;
+    border-left: 1px solid #023047;
+}
+
+.card-info .title {
+    font-size: 1.2rem;
+    font-weight: bold
+}
+
+.card-info .contact {
+    display: flex;
+}
+
+.card-info .contact img {
+    width: 18px;
+    margin-right: 18px;
+}
+
+.card-info a {
+    text-decoration: none;
+    color: #023047;
+    transition: color .5s ease;
+}
+
+.card-info a:hover {
+    color: #FB8500;
+}
+
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
